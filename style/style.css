@@ -1,0 +1,56 @@
+/*editar apenas os  arquivos .scss*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: aliceblue;
+  color: #fc2929;
+}
+
+header button {
+  background: #3f3fdb;
+}
+
+header button:hover {
+  background: #9d22e4;
+}
+
+header button::after {
+  content: ' hello world';
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fc2929;
+  height: calc(100vh - 300px);
+}
+
+.info h2, .info p {
+  color: #3d3a3a;
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */

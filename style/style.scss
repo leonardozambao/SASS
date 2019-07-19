@@ -1,0 +1,17 @@
+/*editar apenas os  arquivos .scss*/
+
+@import './variables.scss';
+@import './header';
+
+
+.info{
+    @include flexCenter(column, $red);
+    height: calc(100vh - 300px);
+    //@extend header;
+    h2,p{
+        color: $grey;
+        font-size: 20px; 
+    }
+    button{
+    }
+}

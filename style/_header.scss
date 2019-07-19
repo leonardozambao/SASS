@@ -1,0 +1,24 @@
+@mixin flexCenter($direction, $bk){
+    @if $direction != row and $direction != column {
+        @error "Property #{$direction} must be either row or column.";
+      }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: $direction;
+    background: $bk;
+}
+header{
+    @include flexCenter(row,$alice);
+    color: $red;
+    button{
+        background: $blue; 
+        &:hover{
+            background: $purple;
+        }
+        &::after{
+            content: ' hello world'
+        }
+    }
+}
