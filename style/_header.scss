@@ -9,8 +9,13 @@
     flex-direction: $direction;
     background: $bk;
 }
+@mixin between(){
+        justify-content: space-between;
+        flex: 1 1 auto;
+}
 header{
     @include flexCenter(row,$alice);
+    @include between();
     color: $red;
     button{
         background: $blue; 

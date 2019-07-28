@@ -15,6 +15,12 @@ header {
       -ms-flex-direction: row;
           flex-direction: row;
   background: aliceblue;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   color: #fc2929;
 }
 
@@ -52,5 +58,24 @@ header button::after {
 .info h2, .info p {
   color: #3d3a3a;
   font-size: 20px;
+}
+
+/* This CSS will print because %message-shared is extended. */
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
 }
 /*# sourceMappingURL=style.css.map */
